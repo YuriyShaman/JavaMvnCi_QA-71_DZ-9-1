@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Test;
 
 public class RadioTest {
 
-    @Test
+    @Test //
     public void testNextStations_0next() {
         Radio radio = new Radio();
         radio.setCarrentStation(5);
@@ -88,7 +88,7 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
     }
 
-    @Test // Для срабатывания ветки
+    @Test
     public void testUpVolume_9Up() {
         Radio radio = new Radio();
         radio.setCarrentVolume(101);
