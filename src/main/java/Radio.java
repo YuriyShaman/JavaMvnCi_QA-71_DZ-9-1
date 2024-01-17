@@ -1,7 +1,7 @@
 public class Radio {
 
+
     private int carrentStation;
-    private int carrentVolume;
 
     public void next() {
 
@@ -23,7 +23,6 @@ public class Radio {
     public int getCarrentStation() {
         return carrentStation;
     }
-
     public void setCarrentStation(int carentStation) {
         if (carentStation < 0) {
             return;
@@ -34,7 +33,11 @@ public class Radio {
         this.carrentStation = carentStation;
     }
 
-    public void up() {
+    //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    private int carrentVolume;
+
+     public void up() {
         if (carrentVolume < 100) {
             carrentVolume++;
         } else {
