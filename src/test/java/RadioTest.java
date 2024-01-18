@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Test;
 
 public class RadioTest {
 
-       @Test нн
+       @Test
     public void testNextStations_0next() {
         Radio radio = new Radio();
         radio.setCarrentStation(5);
