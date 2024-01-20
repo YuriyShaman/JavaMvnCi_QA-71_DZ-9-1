@@ -67,7 +67,7 @@ public class RadioTest {
     }
 
     @Test
-    public void testNextStationsOuteside() { // Переключение с указанного номера за границей указанного диапазона вниз
+    public void testNextStationsOuteside() { // Переключение с указанного номера за границей указанного диапазона верх
         Radio radio = new Radio(3);
         radio.setCarrentStation(5);
         radio.next();
@@ -88,7 +88,7 @@ public class RadioTest {
 
     @Test
     public void testPrevStationsOutesideMin() { // Переключение с "невозможного" номера за границей
-        Radio radio = new Radio(-1, 5);            // указанного диапазона вниз (проверка покрытия тестов)
+        Radio radio = new Radio(-1, 5);         // указанного диапазона вниз (проверка покрытия тестов)
         radio.setCarrentStation(0);
         radio.prev();
         int actual = radio.getCarrentStation();
